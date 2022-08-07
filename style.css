@@ -1,0 +1,54 @@
+:root {
+    --floating-bg: #ffc634a8;
+    --color-white: #fff;
+}
+
+html {
+    font-size: 16px;
+}
+
+
+h1 {
+    font-size: 3rem; /*46px*/
+}
+
+footer
+{
+  width: 100%;
+  height: 300px;
+}
+
+.content
+{
+  height: 2000px;
+  position: relative;
+  z-index: 1;
+}
+
+#nowfooter {
+    float: left;
+    display: flex;
+    right: 19px;
+    bottom: 17px;
+    position: fixed;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: var(--floating-bg);
+    backdrop-filter: blur(5px);
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0 2px 5px 2px rgb(0 0 0 / 15%);
+    transition: .3s linear;
+    z-index: 120;
+}
+
+/*아이콘을 중앙 배치 시키기 위해 vertical-aling을 middle로 설정한다.*/
+#nowfooter svg {
+    fill: var(--color-white);
+    width: 19px;
+    display: inline-block;
+    vertical-align: middle;
+}
